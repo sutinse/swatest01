@@ -1,0 +1,14 @@
+{
+    "routes": [
+      {
+        "route": "/auth/authenticated/*",
+         "allowedRoles": ["reader"]
+      }
+    ],
+    "platformErrorOverrides": [
+      {
+        "errorType": "NotFound",
+        "serve": "/custom-404.html"
+      }
+    ]
+  }
